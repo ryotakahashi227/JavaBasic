@@ -35,32 +35,40 @@ public class PTra04_05 {
 			int cpuHand = new java.util.Random().nextInt(3);
 
 			//---------------------ここから本題-----------------------
-			/*
-			 * 以下のプログラムでは、まだ未完成です。
-			 * ★ 残りのプログラムを追記して、じゃんけんゲームを完成させてください
-			 *
-			 * ●じゃんけんに、勝った場合はプログラムを終了します
-			 * ●あいこ、又は負けた場合は、勝つまでプログラムが終わりません
-			 *
-			 * ※ プログラムは何行書いても良いです
-			 */
-			if (cpuHand == 0) {
+
+			
+			if (cpuHand == 0&&myHand == 0) {
 				System.out.println("グー！");
-
-
-
-			} else if (cpuHand == 1) {
+			}else if (cpuHand == 0&&myHand == 1){
+				System.out.println("グー！");
+			
+			 
+			}else if (cpuHand == 1&&myHand == 1) {
 				System.out.println("チョキ！！");
+			}else if (cpuHand ==  1&&myHand == 2) {
+				System.out.println("チョキ！！");
+			 
 
-
-
-			} else {
-				System.out.println("パー！！");
-
-
-
-			}
-
-		}
+	    	}else if (cpuHand == 2&&myHand == 2) {
+				 System.out.println("パー！！");
+	    	}else if (cpuHand == 2&&myHand == 0) {
+			     System.out.println("パー！！");
+	    	
+	    	}else {
+				break;
+	 	
+	    	}	
 	}
+		System.out.println("ゲーム終了");
+	}
+
 }
+/*
+ * 以下のプログラムでは、まだ未完成です。
+ * ★ 残りのプログラムを追記して、じゃんけんゲームを完成させてください
+ *
+ * ●じゃんけんに、勝った場合はプログラムを終了します
+ * ●あいこ、又は負けた場合は、勝つまでプログラムが終わりません
+ *
+ * ※ プログラムは何行書いても良いです
+ */

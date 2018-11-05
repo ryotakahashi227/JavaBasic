@@ -36,28 +36,34 @@ public class PTra04_05 {
 
 			//---------------------ここから本題-----------------------
 
-			
+
 			if (cpuHand == 0&&myHand == 0) {
 				System.out.println("グー！");
 			}else if (cpuHand == 0&&myHand == 1){
 				System.out.println("グー！");
-			
-			 
+
+
 			}else if (cpuHand == 1&&myHand == 1) {
 				System.out.println("チョキ！！");
 			}else if (cpuHand ==  1&&myHand == 2) {
 				System.out.println("チョキ！！");
-			 
+
 
 	    	}else if (cpuHand == 2&&myHand == 2) {
 				 System.out.println("パー！！");
 	    	}else if (cpuHand == 2&&myHand == 0) {
 			     System.out.println("パー！！");
-	    	
-	    	}else {
-				break;
-	 	
-	    	}	
+
+	    	}else if(cpuHand == 0&&myHand ==2) {
+	    		System.out.println("グー！");
+	    		winFlg = true;
+	    	}else if (cpuHand == 1&&myHand ==0) {
+	    		System.out.println("チョキ！！");
+	    		winFlg = true;
+	    	}else if (cpuHand == 2&&myHand == 1) {
+	    		System.out.println("パー！！");
+	    		winFlg = true;
+	    	}
 	}
 		System.out.println("ゲーム終了");
 	}

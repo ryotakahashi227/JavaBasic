@@ -24,6 +24,33 @@ public class PTra06_07 {
 		 * ■■□□□
 		 * ■□□□□
 		 */
-
+		for(int i =0;i<6;i++) {
+			if(i<1) {
+				System.out.print("□");	
+			}else {
+				System.out.print("■");
+			}
+			for(int j =0;j<4;j++) {
+				if(j<i-1) {
+					System.out.print("■");
+				}else {
+				System.out.print("□");
+			}
+			}
+				System.out.println();
+		}
+		for(int i =0;i<4;i++) {
+		
+				System.out.print("■");
+			
+			for(int j =0;j<4;j++) {
+				if(j<3-i) {
+					System.out.print("■");
+				}else {
+				System.out.print("□");
+			}
+			}
+				System.out.println();
+		}
 	}
 }

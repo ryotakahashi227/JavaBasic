@@ -29,6 +29,6 @@ public class PTra07_06 {
 			System.out.println(sum);
 			sumAll += sum;
 		}
-		System.out.println(sumAll/array.length);
+		System.out.println(sumAll/(array[0].length+array[1].length));
 	}
 }
